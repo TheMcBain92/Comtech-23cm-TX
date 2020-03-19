@@ -66,7 +66,7 @@ void setup() {
 
   // -- LCD Welcome Message
   lcd.setCursor(1, 0); // go home on LCD
-  lcd.print("Shack Temp Monitor");
+  lcd.print("Comtech 23cm Transmitter");
   lcd.setCursor(7, 1);
   lcd.print(codeversion);
   lcd.setCursor(2, 3);
@@ -77,10 +77,10 @@ void setup() {
 
 void headder() //Setup LCD with logging active message
 {
-  Serial.println(F("Headder With Logging"));
+  Serial.println(F("Adapted by Stephen McBain"));
   lcd.clear();
   lcd.home();
-  lcd.print(F("Temp Log Active"));
+  lcd.print(F("Callsign M5SJM"));
   layout();
 }
 
@@ -182,5 +182,3 @@ void setFrequency(unsigned long ftx) {
   
   Wire.endTransmission();          // Send to the slave
 }
-
-
